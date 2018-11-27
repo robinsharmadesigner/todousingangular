@@ -1,0 +1,22 @@
+$color1: rgb(86, 150, 247);
+$color2: rgb(255, 255, 255);
+
+input {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background: rgb(8, 8, 8);
+    border: 1px solid $color1;
+    color: $color2;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 18px;
+}
+
+button{
+       
+    background: $color1;
+    color: $color2;
+    border: 0;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+}

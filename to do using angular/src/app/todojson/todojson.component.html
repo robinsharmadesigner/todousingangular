@@ -1,0 +1,29 @@
+
+  
+  <div id="divOut" >
+      <!--   tasks will appear here   -->  
+      <!-- <div class="text" *ngFor="let jdata of jsondata$">
+      <div class="removejson">x</div>{{jdata.title}}
+      <input type="text" id="taskText">
+      <button id="addTaskBtn">+</button><br>
+      <ul><li *ngFor="let task of jdata.todoitem ">{{task}}<span class="removejtask" id="remove">x</span></li></ul>
+     <br>
+      <span>Author:</span>{{jdata.author}}<br>
+      <span>Date:</span>{{jdata.date}}
+      </div>
+       -->
+      
+      <div class="text" *ngFor="let jdata of todocards$" id={{jdata.id}}>
+            <div class="removejson" (click)="removeTitle($event)">x</div>{{jdata.title}}
+            <input type="text" id="taskText" class="taskin">
+            <button id="addTaskBtn" (click)="addTask($event)">+</button><br>
+            <ul><li *ngFor="let task of jdata.list"  id={{task.id}} (click)="strike($event)">{{task.title}}<span class="removejtask" id="remove" (click)="removeTask($event)">x</span></li></ul>
+            <!-- <br> -->
+            <span>Author:</span>{{jdata.author}}<br>
+            <span>Date:</span>{{jdata.date}}
+            </div>  
+  </div>
+
+      
+  
+  <!-- "title":"Work","todoitem":["Class","Assignment","Quiz"],"author":"MOJO","date":"22/12/2018" -->

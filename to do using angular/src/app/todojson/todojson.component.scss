@@ -1,0 +1,63 @@
+$bordercolor: rgb(86, 150, 247);
+$color: rgb(255, 255, 255);
+
+    #divOut{
+        .text {
+            float: left;
+            /* display: inline-block; */
+            padding: 0 12px 6px 12px;
+            border: 2px solid  $bordercolor;
+            min-width: 15%;
+            min-height: 30%;
+            margin: 1%;
+
+            .removejson{
+                float: left; 
+                margin: 0px 0px 0px 0px;
+                cursor: pointer;
+                /* display: inline-block;  */
+                padding: 0 12px 6px 12px;
+                border: 1px solid  $bordercolor;
+            }
+
+            ul{
+
+                padding: 0px;
+                margin: 0px;
+            
+                li{
+                    list-style: none;
+
+                    span {
+                        float: right;
+                        cursor: pointer;
+                        
+                    }
+                    
+                    }
+
+                    li.checked { 
+                        text-decoration: line-through;
+                      }
+            }
+        }
+
+        input{
+            display: inline-block;
+            margin: 0 0 10px 0;
+            padding: 5px;
+            background: rgb(8, 8, 8);
+            border: 1px solid $bordercolor;
+            color:$color;
+            font-family: 'Franklin Gothic Medium';
+            font-size: 18px;
+        }
+
+        button{
+                background: $bordercolor;
+                color:$color;
+                border: 0;
+                font-family: 'Franklin Gothic Medium';
+                font-size: 20px;
+        } 
+    }
